@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-app-theknewishapp
+spec:
+  replicas: 3 # Number of pods to run
+  selector:
+    matchLabels:
+      app: django-theknewishapp
+  template:
+    metadata:
+      labels:
+        app: django-theknewishapp
+    spec:
+      containers:
+        - name: django-theknewishapp-container
+          image: your-docker-image:latest # Replace with your built image
+          ports:
+            - containerPort: 8000
+          volumeMounts:
+            - mountPath: /code
+              name: code-volume
+          env:
+            - name: DEBUG
+              value: "True"
+      volumes:
+        - name: code-volume
+          hostPath:
+            path: /mnt/c/User/success/Desktop/django-project/organicproject
