@@ -1,17 +1,17 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
-    return render(request, 'theknewishapp/index.html')
+def home(request):
+    return render(request, 'theknewishapp/home.html')
 
-def icon(request):
-    return render(request, "theknewishapp/icon-menu.html")
+def icon_menu(request):
+    return render(request, "theknewishapp/icon_menu.html")
 
-def sidebar(request):
-    return render(request, "theknewishapp/sidebar-style-2.html")
+def sidebar_style_2(request):
+    return render(request, "theknewishapp/sidebar_style_2.html")
 
 def starter(request):
-    return render(request, "theknewishapp/starter-template.html")
+    return render(request, "theknewishapp/starter_template.html")
 
 def widgets(request):
     return render(request, "theknewishapp/widgets.html")
@@ -20,7 +20,7 @@ def charts(request):
     return render(request, "theknewishapp/charts.html")
 
 def sparkline(request):
-    return render(request, "theknewishapp/sparkline.html")
+    return render(request, "theknewishapp/charts/sparkline.html")
 
 def avatars(request):
     return render(request, "theknewishapp/components/avatars.html")
@@ -53,7 +53,7 @@ def typography(request):
     return render(request, 'theknewishapp/components/typography.html')
 
 def sidebar_style_2(request):
-    return render(request, 'theknewishapp/components/sidebar_style2.html')
+    return render(request, 'theknewishapp/components/sidebar_style_2.html')
 
 def icon_menu(request):
     return render(request, 'theknewishapp/components/icon_menu.html')
@@ -73,8 +73,24 @@ def googlemaps(request):
 def jsvectormap(request):
     return render(request, 'theknewishapp/maps/jsvectormap.html')
 
-def chartjs(request):
-    return render(request, 'theknewishapp/charts/chartjs.html')
+def charts(request):
+    return render(request, 'theknewishapp/charts/charts.html')
+
+def profile(request):
+    return render(request, 'theknewishapp/profile.html')
+
+def demo1_index(request):
+    return render(request, 'theknewishapp/demo1_index')
+
+def index(request):
+    return render(request, 'theknewishapp/index.html')
+
+def sidebar_style_2(request):
+    return render(request, 'theknewishapp/sidebar_style_2.html')
+
+def icon_menu(request):
+    return render(request, 'theknewishapp/icon_menu.html')
+
 
 
 

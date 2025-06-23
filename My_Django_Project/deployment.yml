@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: django-app-theknewishapp
 spec:
-  replicas: 3 # Number of pods to run
+  replicas: 5 # Number of pods to run
   selector:
     matchLabels:
       app: django-theknewishapp

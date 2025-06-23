@@ -10,12 +10,12 @@
     />
     <link
       rel="icon"
-      href="assets/img/kaiadmin/favicon.ico"
+      href="{% static 'assets/img/kaiadmin/favicon.ico' %}"
       type="image/x-icon"
     />
 
     <!-- Fonts and icons -->
-    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script src="{% static 'assets/js/plugin/webfont/webfont.min.js' %}"></script>
     <script>
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
@@ -35,12 +35,12 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins.min.css" />
-    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/kaiadmin.min.css' %}" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}" />
   </head>
   <body>
     <div class="wrapper">
@@ -49,9 +49,9 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
               <img
-                src="assets/img/kaiadmin/logo_light.svg"
+                src="{% static 'assets/img/kaiadmin/logo_light.svg' %}"
                 alt="navbar brand"
                 class="navbar-brand"
                 height="20"
@@ -110,47 +110,47 @@
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="components/avatars.html">
+                      <a href="{% url 'components_avatars' %}">
                         <span class="sub-item">Avatars</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/buttons.html">
+                      <a href="{% url 'components_buttons' %}">
                         <span class="sub-item">Buttons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/gridsystem.html">
+                      <a href="{% url 'components_gridsystem' %}">
                         <span class="sub-item">Grid System</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/panels.html">
+                      <a href="{% url 'components_panels' %}">
                         <span class="sub-item">Panels</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/notifications.html">
+                      <a href="{% url 'components_notifications' %}">
                         <span class="sub-item">Notifications</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/sweetalert.html">
+                      <a href="{% url 'components_sweetalert' %}">
                         <span class="sub-item">Sweet Alert</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/font-awesome-icons.html">
+                      <a href="{% url 'components_font_awesome_icons' %}">
                         <span class="sub-item">Font Awesome Icons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/simple-line-icons.html">
+                      <a href="{% url 'components_simple_line_icons' %}">
                         <span class="sub-item">Simple Line Icons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="components/typography.html">
+                      <a href="{% url 'components_typography' %}">
                         <span class="sub-item">Typography</span>
                       </a>
                     </li>
@@ -166,12 +166,12 @@
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="{% url 'sidebar-style-2' %}">
+                      <a href="{% url 'sidebar_style_2' %}">
                         <span class="sub-item">Sidebar Style 2</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'icon-menu' %}">
+                      <a href="{% url 'icon_menu' %}">
                         <span class="sub-item">Icon Menu</span>
                       </a>
                     </li>
@@ -187,7 +187,7 @@
                 <div class="collapse" id="forms">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="forms/forms.html">
+                      <a href="{% url 'forms_forms' %}">
                         <span class="sub-item">Basic Form</span>
                       </a>
                     </li>
@@ -203,12 +203,12 @@
                 <div class="collapse" id="tables">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="tables/tables.html">
+                      <a href="{% url 'tables_tables' %}">
                         <span class="sub-item">Basic Table</span>
                       </a>
                     </li>
                     <li>
-                      <a href="tables/datatables.html">
+                      <a href="{% url 'tables_datatables' %}">
                         <span class="sub-item">Datatables</span>
                       </a>
                     </li>
@@ -224,12 +224,12 @@
                 <div class="collapse" id="maps">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="maps/googlemaps.html">
+                      <a href="{% url 'maps_googlemaps' %}">
                         <span class="sub-item">Google Maps</span>
                       </a>
                     </li>
                     <li>
-                      <a href="maps/jsvectormap.html">
+                      <a href="{% url 'maps_jsvectormap' %}">
                         <span class="sub-item">Jsvectormap</span>
                       </a>
                     </li>
@@ -245,12 +245,12 @@
                 <div class="collapse" id="charts">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="charts/charts.html">
+                      <a href="{% url 'charts_charts' %}">
                         <span class="sub-item">Chart Js</span>
                       </a>
                     </li>
                     <li>
-                      <a href="charts/sparkline.html">
+                      <a href="{% url 'charts_sparkline' %}">
                         <span class="sub-item">Sparkline</span>
                       </a>
                     </li>
@@ -265,7 +265,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../documentation/index.html">
+                <a href="{% url 'documentation_index' %}">
                   <i class="fas fa-file"></i>
                   <p>Documentation</p>
                   <span class="badge badge-secondary">1</span>
@@ -333,9 +333,9 @@
           <div class="main-header-logo">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="dark">
-              <a href="{% static 'thindex.html" class="logo">
+              <a href="{% url 'index' %}" class="logo">
                 <img
-                  src="assets/img/kaiadmin/logo_light.svg"
+                  src="{% static 'assets/img/kaiadmin/logo_light.svg' %}"
                   alt="navbar brand"
                   class="navbar-brand"
                   height="20"
@@ -433,7 +433,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/jm_denis.jpg"
+                                src="{% static 'assets/img/jm_denis.jpg' %}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -446,7 +446,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/chadengle.jpg"
+                                src="{% static 'assets/img/chadengle.jpg' %}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -459,7 +459,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/mlane.jpg"
+                                src="{% static 'assets/img/mlane.jpg' %}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -474,7 +474,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/talha.jpg"
+                                src="{% static 'assets/img/talha.jpg' %}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -542,7 +542,7 @@
                           <a href="#">
                             <div class="notif-img">
                               <img
-                                src="assets/img/profile2.jpg"
+                                src="{% static 'assets/img/profile2.jpg' %}"
                                 alt="Img Profile"
                               />
                             </div>
@@ -660,7 +660,7 @@
                   >
                     <div class="avatar-sm">
                       <img
-                        src="assets/img/profile.jpg"
+                        src="{% static 'assets/img/profile.jpg' %}"
                         alt="..."
                         class="avatar-img rounded-circle"
                       />
@@ -676,7 +676,7 @@
                         <div class="user-box">
                           <div class="avatar-lg">
                             <img
-                              src="assets/img/profile.jpg"
+                              src="{% static 'assets/img/profile.jpg' %}"
                               alt="image profile"
                               class="avatar-img rounded"
                             />
@@ -685,7 +685,7 @@
                             <h4>Hizrian</h4>
                             <p class="text-muted">hello@example.com</p>
                             <a
-                              href="profile.html"
+                              href="{% url 'profile' %}"
                               class="btn btn-xs btn-secondary btn-sm"
                               >View Profile</a
                             >
@@ -935,7 +935,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/id.png"
+                                      src="{% static 'assets/img/flags/id.png' %}"
                                       alt="indonesia"
                                     />
                                   </div>
@@ -948,7 +948,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/us.png"
+                                      src="{% static 'assets/img/flags/us.png' %}"
                                       alt="united states"
                                     />
                                   </div>
@@ -961,7 +961,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/au.png"
+                                      src="{% static 'assets/img/flags/au.png' %}"
                                       alt="australia"
                                     />
                                   </div>
@@ -974,7 +974,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/ru.png"
+                                      src="{% static 'assets/img/flags/ru.png' %}"
                                       alt="russia"
                                     />
                                   </div>
@@ -987,7 +987,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/cn.png"
+                                      src="{% static 'assets/img/flags/cn.png' %}"
                                       alt="china"
                                     />
                                   </div>
@@ -1000,7 +1000,7 @@
                                 <td>
                                   <div class="flag">
                                     <img
-                                      src="assets/img/flags/br.png"
+                                      src="{% static 'assets/img/flags/br.png' %}"
                                       alt="brazil"
                                     />
                                   </div>
@@ -1062,7 +1062,7 @@
                       <div class="item-list">
                         <div class="avatar">
                           <img
-                            src="assets/img/jm_denis.jpg"
+                            src="{% static 'assets/img/jm_denis.jpg' %}"
                             alt="..."
                             class="avatar-img rounded-circle"
                           />
@@ -1099,7 +1099,7 @@
                       <div class="item-list">
                         <div class="avatar">
                           <img
-                            src="assets/img/talha.jpg"
+                            src="{% static 'assets/img/talha.jpg' %}"
                             alt="..."
                             class="avatar-img rounded-circle"
                           />
@@ -1118,7 +1118,7 @@
                       <div class="item-list">
                         <div class="avatar">
                           <img
-                            src="assets/img/chadengle.jpg"
+                            src="{% static 'assets/img/chadengle.jpg' %}"
                             alt="..."
                             class="avatar-img rounded-circle"
                           />
@@ -1558,41 +1558,41 @@
       <!-- End Custom template -->
     </div>
     <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="{% static 'assets/js/core/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/core/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/core/bootstrap.min.js' %}"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="{% static 'assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
 
     <!-- Chart JS -->
-    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+    <script src="{% static 'assets/js/plugin/chart.js/chart.min.js' %}"></script>
 
     <!-- jQuery Sparkline -->
-    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="{% static 'assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js' %}"></script>
 
     <!-- Chart Circle -->
-    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+    <script src="{% static 'assets/js/plugin/chart-circle/circles.min.js' %}"></script>
 
     <!-- Datatables -->
-    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+    <script src="{% static 'assets/js/plugin/datatables/datatables.min.js' %}"></script>
 
     <!-- Bootstrap Notify -->
-    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="{% static 'assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js' %}"></script>
 
     <!-- jQuery Vector Maps -->
-    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+    <script src="{% static 'assets/js/plugin/jsvectormap/jsvectormap.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugin/jsvectormap/world.js' %}"></script>
 
     <!-- Sweet Alert -->
-    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+    <script src="{% static 'assets/js/plugin/sweetalert/sweetalert.min.js' %}"></script>
 
     <!-- Kaiadmin JS -->
-    <script src="assets/js/kaiadmin.min.js"></script>
+    <script src="{% static 'assets/js/kaiadmin.min.js' %}"></script>
 
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="assets/js/setting-demo.js"></script>
-    <script src="assets/js/demo.js"></script>
+    <script src="{% static 'assets/js/setting-demo.js' %}"></script>
+    <script src="{% static 'assets/js/demo.js' %}"></script>
     <script>
       $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
         type: "line",

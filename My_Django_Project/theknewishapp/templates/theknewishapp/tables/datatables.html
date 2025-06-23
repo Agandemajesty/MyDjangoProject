@@ -10,12 +10,12 @@
     />
     <link
       rel="icon"
-      href="{% static 'assets/img/kaiadmin/favicon.ico"
+      href="{% static 'assets/img/kaiadmin/favicon.ico' %}"
       type="image/x-icon"
     />
 
     <!-- Fonts and icons -->
-    <script src="{% static 'assets/js/plugin/webfont/webfont.min.js"></script>
+    <script src="{% static 'assets/js/plugin/webfont/webfont.min.js' %}"></script>
     <script>
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
@@ -26,7 +26,7 @@
             "Font Awesome 5 Brands",
             "simple-line-icons",
           ],
-          urls: ["{% static 'assets/css/fonts.min.css"],
+          urls: ["{% static 'assets/css/fonts.min.css' %}"],
         },
         active: function () {
           sessionStorage.fonts = true;
@@ -35,12 +35,12 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{% static 'assets/css/plugins.min.css" />
-    <link rel="stylesheet" href="{% static 'assets/css/kaiadmin.min.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/kaiadmin.min.css' %}" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{% static 'assets/css/demo.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}" />
   </head>
   <body>
     <div class="wrapper">
@@ -49,9 +49,9 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="{% url 'index.html" class="logo">
+            <a href="{% url 'index' %}" class="logo">
               <img
-                src="{% static 'assets/img/kaiadmin/logo_light.svg"
+                src="{% static 'assets/img/kaiadmin/logo_light.svg' %}"
                 alt="navbar brand"
                 class="navbar-brand"
                 height="20"
@@ -88,7 +88,7 @@
                 <div class="collapse" id="dashboard">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="{% url 'demo1/index.html">
+                      <a href="{% url 'demo1_index' %}">
                         <span class="sub-item">Dashboard 1</span>
                       </a>
                     </li>
@@ -110,47 +110,47 @@
                 <div class="collapse" id="base">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="{% url 'components/avatars.html">
+                      <a href="{% url 'components_avatars' %}">
                         <span class="sub-item">Avatars</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/buttons.html">
+                      <a href="{% url 'components_buttons' %}">
                         <span class="sub-item">Buttons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/gridsystem.html">
+                      <a href="{% url 'components_gridsystem' %}">
                         <span class="sub-item">Grid System</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/panels.html">
+                      <a href="{% url 'components_panels' %}">
                         <span class="sub-item">Panels</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/notifications.html">
+                      <a href="{% url 'components_notifications' %}">
                         <span class="sub-item">Notifications</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/sweetalert.html">
+                      <a href="{% url 'components_sweetalert' %}">
                         <span class="sub-item">Sweet Alert</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/font-awesome-icons.html">
+                      <a href="{% url 'components_font_awesome_icons' %}">
                         <span class="sub-item">Font Awesome Icons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/simple-line-icons.html">
+                      <a href="{% url 'components_simple_line_icons' %}">
                         <span class="sub-item">Simple Line Icons</span>
                       </a>
                     </li>
                     <li>
-                      <a href="{% url 'components/typography.html">
+                      <a href="{% url 'components_typography' %}">
                         <span class="sub-item">Typography</span>
                       </a>
                     </li>
@@ -166,7 +166,7 @@
                 <div class="collapse" id="sidebarLayouts">
                   <ul class="nav nav-collapse">
                     <li>
-                      <a href="{% url 'sidebar-style-2.html">
+                      <a href="{% url 'sidebar_style_2' %}">
                         <span class="sub-item">Sidebar Style 2</span>
                       </a>
                     </li>
