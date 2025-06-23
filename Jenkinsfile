@@ -7,6 +7,12 @@ pipeline {
     }
 
     stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/Agandemajesty/MyDjangoProject.git'
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
@@ -18,7 +24,9 @@ pipeline {
         stage('Login to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                     'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                    bat """
+                    echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
+                    """
                 }
             }
         }
